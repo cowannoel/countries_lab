@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Countries Lab</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/bundle.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <h1>Countries</h1>
+      <h2>Total population {{ totalPopulation }}</h2>
+      <select v-model=selectedCountry>
+        <option v-for="country in countries" :value="country" >{{country.name}}</option>
+      </select>
+
+
+    </div>
+
+  </body>
+</html>
